@@ -1,0 +1,102 @@
+/*使元素挨近*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*设置背景图片*/
+.body{
+    background:url("../images/login_background.jpg") no-repeat center ;
+    background-size: cover;
+}
+
+/*设置登陆框框的样式*/
+.lg_layout{
+    width: 700px;
+    height: 450px;
+    margin-top: 80px;/*与顶部边距的距离*/
+    margin-left: 400px;/*左边边距的距离*/
+    background-color:  rgba(0,0,0,0.1);/*rgba()最后一个参数改变透明度，只改变登录的框框,opacity是把所有的内容透明度都改变*/
+}
+.lg_left{
+    float: left;
+    margin: 15px;
+}
+/*.lg_left的第一个子标签的样式*/
+.lg_left p:first-child{
+    color: #FFD026;
+    font-size: 20px;
+}
+/*.lg_left的最后一个子标签的样式*/
+.lg_left p:last-child{
+    color: #A6A6A6;
+    font-size: 20px;
+}
+
+/*表单部分*/
+.lg_center{
+    width: 385px;
+    height: 280px;
+    float: left;
+    margin-top: 80px;
+    border-radius: 8px;
+    padding-right: 15px;
+    padding-top: 70px;
+}
+.td_left{
+    width: 100px;
+    text-align: right;/*使右边对齐*/
+    height: 45px;
+    color: white;
+}
+.td_right{
+    padding-left: 30px;
+}
+#username,#password{
+    width: 180px;
+    height: 28px;
+    border: 2px solid #A6A6A6;
+    border-radius: 5px;
+    padding-left: 15px;
+}
+
+
+.lg_right{
+    float: right;
+    margin: 15px;
+}
+.lg_right p:first-child{
+    size: 15px;
+}
+.lg_right p a{
+    color: pink;
+}
+
+#btn_sub,#btn_sub1{
+    width: 100px;
+    height: 30px;
+    background-color: cornflowerblue;
+    border: 1px solid cornflowerblue;
+    margin-left: 100px;
+    margin-top: 15px;
+    border-radius: 5px;/*使边框四个角变好看*/
+}
+
+#btn_sub1{
+    width: 100px;
+    height: 30px;
+    background-color: cornflowerblue;
+    /*  border: 1px solid cornflowerblue;*/
+    margin-left: 30px;
+    border-radius: 5px;
+}
+#main{
+    width: 2000px;
+}
+
+/*登录时密码错误时的样式*/
+#login_error{
+    size: 15px;
+    color: red;
+}
